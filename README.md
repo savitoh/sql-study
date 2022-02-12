@@ -9,7 +9,13 @@ Repo with resources for sql study.
 
 ## Usage
 
-1. Create DB Schema
+1. Create database Schema
+
+    Open the shell and digit command to follow:
+
+    ```
+    docker-compose up
+    ```
 
 ## Dataset
 
