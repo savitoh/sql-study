@@ -20,3 +20,5 @@ Repo with resources for sql study.
 ## Dataset
 
 Public Dataset by [Olist Commerce Services](https://github.com/olist). You can find and donwload it on the [kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce?select=olist_orders_dataset.csv)
+
+![Schema Diagram](docs/schema_diagram.png) 
