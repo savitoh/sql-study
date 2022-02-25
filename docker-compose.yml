@@ -12,5 +12,6 @@ services:
       - OLIST_DB=olist
     volumes:
       - ./db:/docker-entrypoint-initdb.d/
+      - ./data:/data
     ports:
       - "5432:5432"

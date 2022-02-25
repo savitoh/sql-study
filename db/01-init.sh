@@ -123,4 +123,18 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-E
 
 
   COMMIT;
+
+  BEGIN; 
+
+    \copy sellers from '/data/olist_sellers_dataset.csv' with delimiter as ',' csv header;
+    \copy geolocation from '/data/olist_geolocation_dataset.csv' with delimiter as ',' csv header;
+    \copy products from '/data/olist_products_dataset.csv' with delimiter as ',' csv header;
+    \copy customers from '/data/olist_customers_dataset.csv' with delimiter as ',' csv header;
+    \copy orders from '/data/olist_orders_dataset.csv' with delimiter as ',' csv header;
+    \copy order_reviews from '/data/olist_order_reviews_dataset.csv' with delimiter as ',' csv header;
+    \copy order_payments from '/data/olist_order_payments_dataset.csv' with delimiter as ',' csv header;
+    \copy order_items from '/data/olist_order_items_dataset.csv' with delimiter as ',' csv header;
+
+  COMMIT;
+  
 EOSQL
